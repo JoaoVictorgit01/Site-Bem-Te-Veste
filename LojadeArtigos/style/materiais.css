@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+* {
+    font-family: 'Nova Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/*
+*Paleta de cores
+*.color1 { #71dbd2 };
+*.color2 { #eeffdb };
+*.color3 { #ade4b5 };
+*.color4 { #d0eaa3 };
+*.color5 { #fff18c };
+*.color1 { #affbff };
+*.color2 { #d2fdfe };
+*.color3 { #fefac2 };
+*.color4 { #febf97 };
+*.color5 { #fe6960 };
+*/
+
+/*Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: #affbff;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #d2fdfe;
+}
+
+nav ul li img {
+    width: 50px;
+    display: flex;
+}
+
+
+/* sub-menu */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #fe6960;
+}
+
+nav ul li:houver ul ul {
+    display: block;
+    position: absolute;
+}
+
+nav ul ul ul {
+    width: 150px;
+}
+
+nav ul ul li a {
+    text-decoration: inherit;
+    display: block;
+}
+/* Final menu */
+
+/* Cards materiais
+
+h2 {
+    margin-left: 15%;
+    text-align: left;
+}
+
+hr {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%
+}
+
+section.cards-materials {
+    margin: 50px auto;
+    display: block;
+    width: 70%;
+    background-color: grey;
+}
+
+.card img {
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+}
+
+Final Card materiais */
+
+.todos-cards{
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.card{
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 23px #273b5738;
+    width: 500px;
+    flex-direction: row;
+}
+
+.mediaCard{
+    background: url("https://54337.cdn.simplo7.net/static/54337/sku/tecidos-cru-tecido-algodao-cru-com-2-80-de-lg-ref-990-1589243763609.jpg") center/cover;
+    height: 250px;
+    width: 100%;
+    
+}
+
+.mediaCard2{
+    background: url("http://www.infoescola.com/wp-content/uploads/2012/10/seda.jpg") center/cover;
+    height: 250px;
+    width: 100%;
+}
+
+.mediaCard3{
+    background: url("https://www.luematecidos.com.br/4134-thickbox_default/cetim-charmeuse-liso-verde-tiffany.jpg") center/cover;
+    height: 250px;
+    width: 100%;
+}
+
+.mediaCard4{
+    background: url("https://www.jlmtecidos.com.br/image/cache/data/Produtos/TE/Tecido-Flanela-Cueiro-Lisa-100-Algodao-0033-LILAS-EE10940F-21-1000x1000.jpg") center/cover;
+    height: 250px;
+    width: 100%;
+}
+
+.mediaCard5{
+    background: url("https://a-static.mlcdn.com.br/618x463/colar-micanga-flower-santin/santinsemijoias/213-131/963056c7322c7ed95963131409d7ed80.jpg") center/cover;
+    height: 250px;
+    width: 100%;
+}
+
+.mediaCard6{
+    background: url("https://ae01.alicdn.com/kf/H347392569e054f6a9368bf75525c1ddfi/Fitas-de-poli-ster-para-embalar-floricultura-fita-de-algod-o-e-denim-grosso-com-material.jpg_Q90.jpg_.webp") center/cover;
+    height: 250px;
+    width: 100%;
+}
+
+.mediaCard7{
+    background: url("https://aventurasnahistoria.uol.com.br/media/_versions/legacy/2017/03/10/botaoesquerdadireita_widelg.jpeg") center/cover;
+    height: 250px;
+    width: 100%;
+}
+
+.title{
+    color: #2b3d59;
+}
+
+.secondText{
+    color: #828fa1;
+}
+
+.buttonText{
+    color: #828fa1;
+}
+
+.card-top{
+padding: 20px;
+}
+
+.buttonCard{
+    padding: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: aquamarine;
+    border-top: 3px solid black;
+}
+
+footer h3 {
+    text-align: left;
+}
+
+.line {
+    margin-top: 10px;
+    height: 120px;
+    border-left: 2px solid blue;
+}
+
+.small-line {
+    margin-top: 13px;
+    height: 50px;
+    border-left: 2px solid red;
+}
+
+.footer-up {
+    background-color: blueviolet;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 2px solid blue;
+    width: 100%;
+    padding: 20px 10px 15px 10px;
+}
+
+.footer-up ul {
+    list-style: none;
+}
+
+.footer-primary-up-left {
+    padding: 10px;
+    margin: 2px;
+    height: fit-content;
+}
+
+.footer-primary-up-center {
+    padding: 10px;
+    margin: 2px;
+    height: fit-content;
+}
+
+.footer-primary-up-right {
+    padding: 10px;
+    margin: 2px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: fit-content;
+}
+
+.footer-primary-up-right .icon-case {
+    padding: 5px;
+    display: inline-flex;
+}
+
+.footer-primary-up-right .icon-case img {
+    margin: 2px;
+    ;
+    width: 50px;
+    height: 50px;
+}
+
+.footer-down {
+    background-color: blue;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-secondary {
+    flex-direction: inline-flex;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-secondary h3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.flag {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.flag img {
+    width: 80px;
+    height: 60px;
+}
+
+.flag h4 {
+    margin-top: 8%;
+    margin-left: 5px;
+    margin-bottom: 2%;
+}
+
+/*Final footer*/

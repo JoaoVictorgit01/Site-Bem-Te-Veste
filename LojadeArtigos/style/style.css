@@ -1,0 +1,386 @@
+/*@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto+Mono&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+* {
+    /*font-family: 'Roboto Mono', monospace;*/
+    font-family: 'Nova Mono', monospace;
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+section .content-up-img a,
+img {
+    width: 500px;
+}
+
+
+/*
+*Paleta de cores
+*.color1 { #71dbd2 };
+*.color2 { #eeffdb };
+*.color3 { #ade4b5 };
+*.color4 { #d0eaa3 };
+*.color5 { #fff18c };
+*.color1 { #affbff };
+*.color2 { #d2fdfe };
+*.color3 { #fefac2 };
+*.color4 { #febf97 };
+*.color5 { #fe6960 };
+*/
+
+#main-body {
+    background-color: rgb(240, 240, 240);
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#slider {
+    display: inline;
+    justify-content: space-between;
+    height: 250px;
+    background-color: blanchedalmond;
+}
+
+#style-chooser {
+    background-color: rgb(255, 239, 195);
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 0px 24px 0px;
+    width: 100%;
+}
+
+#style-chooser img {
+    margin: 15% 5% 5% 36%;
+    width: 40px;
+    height: 40px;
+}
+
+.style-category {
+    background-color: rgb(255, 123, 46);
+    margin: 10px 0px 10px 10px;
+    padding: 30px;
+    width: 200px;
+    height: 180px;
+    border: .5rem;
+    transition: transform .2s;
+    /* Animation */
+}
+
+.style-category:hover {
+    transform: scale(1.1);
+}
+
+div.content-up-right {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(247, 201, 102);
+}
+
+.content-up-right .content-text h2,
+a {
+    color: inherit;
+    text-decoration: none;
+    margin: 10px auto 10px auto;
+    padding: 8px;
+}
+
+.content-text {
+    margin-top: 12%;
+    margin-bottom: 20%;
+    transition: .2s;
+}
+
+.content-text a:hover,
+.content-text img {
+    background-color: rgba(248, 187, 55, 0.61);
+    border-radius: .8rem;
+}
+
+.content-text:hover {
+    transform: scale(1.1);
+}
+
+.content-up-img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.content-text a {
+    font-size: 1.3em;
+}
+
+.content-text img {
+    width: 20px;
+}
+
+div.content-up-img img#img-content-right {
+    height: 360px;
+    width: 380px;
+}
+
+.announcer {
+    background-color: white;
+    margin: 15px 20px 0px 20px;
+    padding: 10px;
+    min-width: fit-content;
+    width: 20%;
+    border: 1px rgb(216, 103, 28) solid;
+}
+
+.announcer h2 {
+    text-align: center;
+}
+
+div#glass-case {
+    color: black;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 0px 24px 0px;
+    width: 100%;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.shirt .category {
+    background-image: url(/img/roupas/masculinas/camisetas/camiseta.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+
+.shirt .category a {
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: .8rem;
+}
+
+.trouser .category {
+    background-image: url(/img/roupas/masculinas/camisetas/camiseta.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+
+.trouser .category a {
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: .8rem;
+}
+
+.footwear .category {
+    background-image: url(/img/roupas/masculinas/camisetas/camiseta.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+
+.footwear .category a {
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: .8rem;
+}
+
+.dresses .category {
+    background-image: url(/img/roupas/masculinas/camisetas/camiseta.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+
+.dresses .category a {
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: .8rem;
+}
+
+.accessories .category {
+    background-image: url(/img/roupas/masculinas/camisetas/camiseta.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+
+.accessories .category a {
+    padding-top: 0px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: .8rem;
+}
+
+div#glass-case .category {
+    background-color: rgb(255, 212, 70);
+    margin: 10px 0px 10px 10px;
+    border-radius: 15rem;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    border: .5rem;
+}
+
+.glass-case-products-main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(255, 251, 245);
+}
+
+.glass-case-products {
+    background-color: rgb(252, 245, 245);
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: .3s;
+    opacity: .9;
+}
+
+.products-showcase:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.glass-case-products .banner {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.banner {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: .2s;
+}
+
+.glass-case-products-main .banner img {
+    height: 300px;
+    width: 480px;
+}
+
+.glass-case-products-main .banner:hover {
+    transform: scale(1.3);
+}
+
+.see-more {
+    margin: 10px;
+    float: right;
+    transition: .2s;
+}
+
+.see-more .announcer:hover {
+    transform: scale(1.1);
+    background-color: rgb(247, 247, 247);
+}
+
+.hugger {
+    margin: 5px;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.products-showcase {
+    background-color: #ffe46e;
+    border: 3px solid black;
+    border-radius: .8rem;
+    padding: 5px;
+    margin: 10px;
+    min-height: 180px;
+    height: fit-content;
+    min-width: 180px;
+}
+
+.product-name {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: italic;
+    border-bottom: 1px solid black;
+    margin: 5px;
+}
+
+.products-showcase img {
+    background-color: gray;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0% 15% 0% 15%;
+    width: 200px;
+    height: 200px;
+}
+
+.products-showcase ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.products-showcase ul li {
+    padding: 10px 6px 12px 9px;
+    margin: 0;
+    display: inline;
+    opacity: .9;
+    transition: .2s;
+    background-color: #f1f1f1;
+}
+
+.products-showcase ul li.acess {
+    padding: 5px 8px 5px 8px;
+    opacity: 1;
+    font-size: 1em;
+    border-right: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    transition: .2s;
+}
+
+.acess a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.products-showcase ul li.acess a:hover {
+    background-color: rgb(160, 255, 160);
+    transform: scale(1.1);
+}
+
+.products-showcase ul li.price {
+    font-size: .9em;
+    text-decoration: none;
+    color: black;
+    background-color: azure;
+}
+
+del {
+    color: red;
+    text-decoration: line-through;
+}
+
+small {
+    font-size: smaller;
+}
+
+sup {
+    vertical-align: super;
+}
+
+
+/* .find-us-box{
+    
+} */

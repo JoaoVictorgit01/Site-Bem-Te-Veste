@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+* {
+    font-family: 'Nova Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+/*
+*Paleta de cores
+*.color1 { #71dbd2 };
+*.color2 { #eeffdb };
+*.color3 { #ade4b5 };
+*.color4 { #d0eaa3 };
+*.color5 { #fff18c };
+*.color1 { #affbff };
+*.color2 { #d2fdfe };
+*.color3 { #fefac2 };
+*.color4 { #febf97 };
+*.color5 { #fe6960 };
+*/
+
+
+/*formulario*/
+
+.container {
+    width: 85%;
+    background: #fff;
+    padding: 20px 60px 30px 40px;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #98857E;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details img {
+    width: 30px;
+    color: #90562E;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #90562E;
+}
+
+.right-side .input-box {
+    padding-top: 15px;
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    padding: 30px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button {
+    text-align: center;
+    width: 150px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #C1AC9C;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #dd6718;
+}
+
+
+/*formulario final*/
